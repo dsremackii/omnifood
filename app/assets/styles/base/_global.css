@@ -1,0 +1,36 @@
+/* edit how you want to use global html */
+
+html {
+  background-color: #mainWhite;
+  color:#555;
+  font-family:'Lato', 'Arial', sans-sarif;
+  font-weight:300;
+  font-size:20px;
+  text-rendering:optimazeLegibility;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  row {
+    max-width: 1140px;
+    margin:0 auto;
+  }
+  
+  
+  
+  
+ 
