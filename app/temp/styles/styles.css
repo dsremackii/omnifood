@@ -427,46 +427,6 @@ textarea {
 
 /* define mixins to use in css */
 
-/* edit how you want to use global html */
-
-html {
-  background-color: #mainWhite;
-  color:#555;
-  font-family:'Lato', 'Arial', sans-sarif;
-  font-weight:300;
-  font-size:20px;
-  text-rendering:optimazeLegibility;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-.row {
-    max-width: 1140px;
-    margin:0 auto;
-  }
-
-h1 {
-    margin: 0;
-    color:#FFF;
-  }
-
-a {
-    text-decoration: none;
-  }
-
-li {
-    list-style: none;
-  }
-
 /*  SECTIONS  ============================================================================= */
 
 .section {
@@ -1128,6 +1088,69 @@ li {
 	}
 }
 
+/* edit how you want to use global html */
+
+html {
+  background-color: #mainWhite;
+  color:#555;
+  font-family:'Lato', 'Arial', sans-sarif;
+  font-weight:300;
+  font-size:20px;
+  text-rendering:optimazeLegibility;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.row {
+    max-width: 1140px;
+    margin:0 auto;
+  }
+
+h1 {
+    margin: 0;
+  }
+
+a {
+    text-decoration: none;
+  }
+
+li {
+    list-style: none;
+  }
+
+section {
+    padding: 80px 0;
+  }
+
+.icon-block {
+    display:block;
+}
+
+.headline {
+  font-weight: 300;
+  text-transform: uppercase;
+  }
+
+.box {
+  padding: 1%;
+}
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color:#e67e22;
+  margin-bottom:10px;
+}
+
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 
@@ -1239,12 +1262,11 @@ Instead edit gulp/templates/sprite */
 
 .site-header__title {
   font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   word-spacing: 4px;
   margin-top: 0;
   margin-bottom: 20px;
+  color:#FFF;
+  letter-spacing: 1px;
 }
 
 .site-header__logo {
@@ -1276,6 +1298,44 @@ Instead edit gulp/templates/sprite */
 .site-header__main-nav li a:hover,
             .site-header__main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+.features-section__title {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.features-section__title:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+.features-section__subtitle {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.features-section__title-description {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.features-section__subtitle-description {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 

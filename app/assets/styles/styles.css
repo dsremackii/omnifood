@@ -3,12 +3,14 @@
 @import "normalize.css";
 @import "base/_variables";
 @import "base/_mixins";
-@import "base/_global";
 @import "base/_grid";
+@import "base/_global";
+
 @import "modules/_sprite";
 @import "modules/_btn";
 @import "modules/_site-header-hero";
 @import "modules/_site-header-navigation";
+@import "modules/_features-section";
 
 
 

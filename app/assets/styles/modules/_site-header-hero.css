@@ -15,11 +15,10 @@
 
     &__title {
         font-size: 240%;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 1px;
         word-spacing: 4px;
         margin-top: 0;
         margin-bottom: 20px;
+        color:$mainWhite;
+        letter-spacing: 1px;
     }
 }
