@@ -1,0 +1,43 @@
+.btn {
+      
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 10px 30px;
+        font-weight: 300;
+        border-radius: 200px;
+        color:$mainWhite;
+        transition:background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    
+    &-full:link,
+    &-full:visited {
+        background-color: $mainOrange;
+        border: 1px solid $mainOrange;
+        color:$mainWhite;
+        margin-right:15px;
+    }
+
+    &-ghost:link,
+    &-ghost:visited {
+        border: 1px solid $mainOrange;
+        color:$mainOrange;
+    }
+
+    &:hover,
+    &:active {
+        background-color:$mainDarkOrange;
+    }
+
+    &-full:hover,
+    &-full:active {
+        border: 1px solid $mainDarkOrange;
+        
+    }
+
+    &-ghost:hover,
+    &-ghost:active {
+        border: 1px solid $mainDarkOrange;
+        color:$mainWhite;
+    }
+}

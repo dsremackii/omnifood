@@ -1,0 +1,25 @@
+.site-header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    &__hero-text-box {
+        position: absolute;
+        text-align:center;
+        width:1140px;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    &__title {
+        font-size: 240%;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}

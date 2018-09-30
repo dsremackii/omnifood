@@ -9,10 +9,6 @@ html {
   text-rendering:optimazeLegibility;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-  }
   
   img {
     max-width: 100%;
@@ -25,9 +21,18 @@ body {
     padding: 0;
   }
 
-  row {
+  .row {
     max-width: 1140px;
     margin:0 auto;
+  }
+
+  h1 {
+    margin: 0;
+    color:$mainWhite;
+  }
+
+  a {
+    text-decoration: none;
   }
   
   
