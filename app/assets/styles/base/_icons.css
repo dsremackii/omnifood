@@ -1,0 +1,21 @@
+.icon-block {
+    display:block;
+}
+  
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color:$mainOrange;
+  margin-bottom:10px;
+}
+
+.icon-small {
+  zoom:0.67;
+  margin-left: 30px;
+  }
+
+  .icon-inline {
+    display: flex;
+    margin-top: 80px;
+    
+  }

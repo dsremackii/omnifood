@@ -42,24 +42,8 @@ html {
     padding: 80px 0;
   }
   
-  .icon-block {
-    display:block;
-}
-  
-.headline {
-  font-weight: 300;
-  text-transform: uppercase;
+  .box {
+    padding: 1%;
   }
-
-.box {
-  padding: 1%;
-}
-  
-.icon-big {
-  font-size: 350%;
-  display: block;
-  color:$mainOrange;
-  margin-bottom:10px;
-}
   
  

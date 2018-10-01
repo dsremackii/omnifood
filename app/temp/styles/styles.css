@@ -1131,17 +1131,34 @@ section {
     padding: 80px 0;
   }
 
-.icon-block {
-    display:block;
-}
-
-.headline {
-  font-weight: 300;
-  text-transform: uppercase;
+.box {
+    padding: 1%;
   }
 
-.box {
-  padding: 1%;
+.headline {
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+.headline-title {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.headline-title:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+.icon-block {
+    display:block;
 }
 
 .icon-big {
@@ -1150,6 +1167,18 @@ section {
   color:#e67e22;
   margin-bottom:10px;
 }
+
+.icon-small {
+  zoom:0.67;
+  margin-left: 30px;
+  }
+
+.icon-inline {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 80px;
+    
+  }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
@@ -1300,23 +1329,6 @@ Instead edit gulp/templates/sprite */
   border-bottom: 2px solid #e67e22;
 }
 
-.features-section__title {
-  font-size: 180%;
-  word-spacing: 2px;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.features-section__title:after {
-  display: block;
-  height: 2px;
-  background-color: #e67e22;
-  content: " ";
-  width: 100px;
-  margin: 30px auto 0 auto;
-}
-
 .features-section__subtitle {
   font-size: 110%;
   margin-bottom: 15px;
@@ -1372,6 +1384,43 @@ Instead edit gulp/templates/sprite */
 .section-meals__meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.section-steps__box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.section-steps__box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.section-steps__app-screen {
+  width: 40%;
+}
+
+.section-steps__work-step {
+  margin-bottom: 50px;
+}
+
+.section-steps__work-step div {
+  color:#e67e22;
+  border:2px solid #e67e22;
+  display: inline;
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  text-align:center;
+  padding:5px;
+  float: left;
+  font-size:150%;
+  margin-right:25px;
 }
 
 
