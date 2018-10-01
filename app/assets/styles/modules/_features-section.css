@@ -36,6 +36,10 @@
 
     }
 
+    &__bottom-margin {
+        margin-bottom: 40px;
+    }
+
 }
 
 .box p {

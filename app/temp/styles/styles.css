@@ -1333,9 +1333,45 @@ Instead edit gulp/templates/sprite */
   margin-bottom: 15px;
 }
 
+.features-section__bottom-margin {
+  margin-bottom: 40px;
+}
+
 .box p {
     font-size: 90%;
     line-height: 145%;
+}
+
+.section-meals {
+    padding: 0;
+}
+
+.section-meals__showcase {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+}
+
+.section-meals__meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.section-meals__meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height:auto;
+  transform: scale(1.15);
+  transition:transform 0.5s, opacity 0.5s;
+}
+
+.section-meals__meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
 
 
