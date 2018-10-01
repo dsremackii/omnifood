@@ -1,0 +1,29 @@
+.section-cities {
+    &__img {
+        width: 100%;
+        height: auto;
+        margin-bottom:20px;
+    }
+
+    &__city-features {
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color:$mainOrange;
+        text-decoration:none;
+        border-bottom:1px solid $mainOrange;
+        transition:border-bottom 0.2s, color 0.2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color:#555;
+        border-bottom:1px solid transparent;
+    }
+}

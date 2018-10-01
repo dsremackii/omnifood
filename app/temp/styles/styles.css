@@ -1161,15 +1161,15 @@ section {
     display:block;
 }
 
-.icon-big {
+.ion-big {
   font-size: 350%;
   display: block;
-  color:#e67e22;
-  margin-bottom:10px;
+  color: #e67e22;
+  margin-bottom: 10px;
 }
 
-.icon-small {
-  zoom:0.67;
+.ion-small {
+  zoom: 0.67;
   margin-left: 30px;
   }
 
@@ -1178,6 +1178,20 @@ section {
     display: flex;
     margin-top: 80px;
     
+  }
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+
   }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
@@ -1423,6 +1437,33 @@ Instead edit gulp/templates/sprite */
   margin-right:25px;
 }
 
+.section-cities__img {
+  width: 100%;
+  height: auto;
+  margin-bottom:20px;
+}
+
+.section-cities__city-features {
+  margin-bottom: 5px;
+}
+
+.section-cities__subtitle {
+  margin-bottom: 20px;
+}
+
+.section-cities__link:link,
+    .section-cities__link:visited {
+  color:#e67e22;
+  text-decoration:none;
+  border-bottom:1px solid #e67e22;
+  transition:border-bottom 0.2s, color 0.2s;
+}
+
+.section-cities__link:hover,
+    .section-cities__link:active {
+  color:#555;
+  border-bottom:1px solid transparent;
+}
 
 
 
