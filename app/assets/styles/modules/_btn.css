@@ -1,5 +1,6 @@
 .btn {
       
+    
     &:link,
     &:visited {
         display: inline-block;
@@ -8,6 +9,7 @@
         border-radius: 200px;
         color:$mainWhite;
         transition:background-color 0.2s, border 0.2s, color 0.2s;
+        
     }
     
     &-full:link,
@@ -41,3 +43,4 @@
         color:$mainWhite;
     }
 }
+

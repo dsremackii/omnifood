@@ -46,4 +46,8 @@ html {
     padding: 1%;
   }
   
+  *:focus {
+    outline:none;
+  }
+
  
