@@ -1,0 +1,37 @@
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.82)), url(/assets/images/back-customers.jpg);
+    background-size: cover;
+    color:$mainWhite;
+    background-attachment:fixed;
+
+    &__blockquote {
+        padding: 2%;
+        font-style: italic;
+        line-height: 145%;
+        position: relative;
+        margin-top: 40px;
+
+        &:before {
+            content:"\201C";
+            font-size:500%;
+            display: block;
+            position: absolute;
+            top:-5px;
+            left:-5px;
+        }
+    }
+
+    &__cite {
+        font-size: 90%;
+        margin-top: 25px;
+        display: block;
+
+        span {
+            border-radius:50%;
+            zoom: 0.25;
+            display: inline-block;
+            margin-right:15px;
+            vertical-align:middle;
+        }
+    }
+}

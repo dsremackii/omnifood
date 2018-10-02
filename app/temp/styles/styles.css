@@ -1140,7 +1140,7 @@ section {
     text-transform: uppercase;
   }
 
-.headline-title {
+.headline--title {
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
@@ -1148,7 +1148,7 @@ section {
   letter-spacing: 1px;
 }
 
-.headline-title:after {
+.headline--title:after {
   display: block;
   height: 2px;
   background-color: #e67e22;
@@ -1290,6 +1290,7 @@ Instead edit gulp/templates/sprite */
 .site-header {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/hero.jpg);
     background-size: cover;
+    background-attachment:fixed;
     background-position: center;
     height: 100vh;
 }
@@ -1463,6 +1464,44 @@ Instead edit gulp/templates/sprite */
     .section-cities__link:active {
   color:#555;
   border-bottom:1px solid transparent;
+}
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.82)), url(/assets/images/back-customers.jpg);
+    background-size: cover;
+    color:#FFF;
+    background-attachment:fixed;
+}
+
+.section-testimonials__blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.section-testimonials__blockquote:before {
+  content:"\201C";
+  font-size:500%;
+  display: block;
+  position: absolute;
+  top:-5px;
+  left:-5px;
+}
+
+.section-testimonials__cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+.section-testimonials__cite span {
+  border-radius:50%;
+  zoom: 0.25;
+  display: inline-block;
+  margin-right:15px;
+  vertical-align:middle;
 }
 
 

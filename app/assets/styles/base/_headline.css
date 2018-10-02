@@ -2,7 +2,7 @@
     font-weight: 300;
     text-transform: uppercase;
     
-    &-title {
+    &--title {
       font-size: 180%;
       word-spacing: 2px;
       text-align: center;
