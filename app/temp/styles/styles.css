@@ -1110,11 +1110,6 @@ img {
     padding: 0;
   }
 
-.row {
-    max-width: 1140px;
-    margin:0 auto;
-  }
-
 h1 {
     margin: 0;
   }
@@ -1129,10 +1124,6 @@ li {
 
 section {
     padding: 80px 0;
-  }
-
-.box {
-    padding: 1%;
   }
 
 *:focus {
@@ -1196,6 +1187,15 @@ section {
     vertical-align: middle;
     margin-top: -5px;
 
+  }
+
+.row {
+    max-width: 1140px;
+    margin:0 auto;
+  }
+
+.box {
+    padding: 1%;
   }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
@@ -1596,6 +1596,58 @@ input[type=submit]:hover,
 
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
+}
+
+.section-footer {
+    background-color: #333;
+    padding: 60px;
+}
+
+.section-footer p {
+  color:#888;
+}
+
+.section-footer__footer-nav {
+  float: left;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-footer__footer-nav li {
+  margin-right: 20px;
+}
+
+.section-footer__footer-nav li a:link,
+            .section-footer__footer-nav li a:visited {
+  border:0;
+  color:#888;
+  transition:color 0.2s;
+}
+
+.section-footer__footer-nav li a:hover,
+            .section-footer__footer-nav li a:active {
+  color:#ddd;
+}
+
+.section-footer__footer-nav li:last-child {
+  margin-right: 0;
+}
+
+.section-footer__social-links {
+  float: right;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-footer__social-links li {
+  margin-right: 20px;
+}
+
+.section-footer__social-links li a:link,
+            .section-footer__social-links li a:visited {}
+
+.section-footer__social-links li:last-child {
+  margin-right: 0;
 }
 
 

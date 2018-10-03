@@ -1,0 +1,58 @@
+.section-footer {
+    background-color: #333;
+    padding: 60px;
+
+    p {
+        color:$colorGrey;
+        text-align:center;
+        font-size:90%;
+    }
+
+    &__footer-nav {
+        float: left;
+        display: flex;
+
+        li {
+            margin-right: 20px;
+
+            a:link,
+            a:visited {
+                border:0;
+                color:$colorGrey;
+                transition:color 0.2s;
+        }
+
+            a:hover,
+            a:active {
+                color:#ddd;
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        
+    }
+
+    &__social-links {
+        float: right;
+        display: flex;
+
+        li {
+            margin-right: 20px;
+
+            a:link,
+            a:visited {
+
+        }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        
+    }
+}
+

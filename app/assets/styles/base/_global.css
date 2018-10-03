@@ -1,7 +1,7 @@
 /* edit how you want to use global html */
 
 html {
-  background-color: #mainWhite;
+  background-color: $mainWhite;
   color:#555;
   font-family:'Lato', 'Arial', sans-sarif;
   font-weight:300;
@@ -21,11 +21,6 @@ html {
     padding: 0;
   }
 
-  .row {
-    max-width: 1140px;
-    margin:0 auto;
-  }
-
   h1 {
     margin: 0;
   }
@@ -42,9 +37,7 @@ html {
     padding: 80px 0;
   }
   
-  .box {
-    padding: 1%;
-  }
+  
   
   *:focus {
     outline:none;
