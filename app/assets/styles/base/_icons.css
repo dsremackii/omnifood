@@ -17,6 +17,14 @@
   .icon-inline {
     display: flex;
     margin-top: 80px;
+
+    @mixin atMediumBig {
+      margin-top: 60px;
+  }
+
+  @mixin atMediumSmall {
+    margin-top: 30px;
+}
     
   }
 
@@ -31,5 +39,10 @@
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
+
+    @mixin atMediumBig {
+      width: 17px;
+      margin-right: 5px;
+  }
 
   }

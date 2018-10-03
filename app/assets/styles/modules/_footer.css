@@ -14,6 +14,12 @@
         float: left;
         display: flex;
 
+        @mixin atMediumSmall {
+            float: none;
+            justify-content:center;
+        }
+
+
         li {
             margin-right: 20px;
 
@@ -40,6 +46,13 @@
     &__social-links {
         float: right;
         display: flex;
+        
+
+        @mixin atMediumSmall {
+            float: none;
+            justify-content:center;
+            margin-top: 15px;
+        }
 
         li {
             margin-right: 20px;

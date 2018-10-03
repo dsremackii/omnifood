@@ -8,6 +8,11 @@
         margin-left:5%;
         box-shadow: 0 2px 2px #efefef;
 
+        @mixin atMediumBig {
+            width:100%;
+            margin-left:0%;
+        }
+
         div {
             padding: 15px;
             border-bottom: 1px solid #e8e8e8;
@@ -34,6 +39,10 @@
         margin-bottom: 10px;
         font-weight: 100;
         color:$mainOrange;
+
+        @mixin atMediumBig {
+             font-size:300%;
+        }
 
         span {
             font-size:30%;

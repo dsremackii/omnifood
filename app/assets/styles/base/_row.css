@@ -1,10 +1,19 @@
 .row {
     max-width: 1140px;
     margin:0 auto;
-  }
+
+    @mixin atLarge {
+      padding: 0 2%;
+    }
+
+    @mixin atMediumSmall{
+        padding: 0 4%;
+    }
+  } 
 
   .box {
     padding: 1%;
+    
   }
 
   

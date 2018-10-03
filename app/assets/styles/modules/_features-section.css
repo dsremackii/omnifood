@@ -9,6 +9,16 @@
         line-height: 145%;
         width: 70%;
         margin-left: 15%;
+
+        @mixin atMediumBig {
+          width: 80%;
+          margin-left:10%;  
+        }
+
+        @mixin atMediumSmall {
+            width: 100%;
+            margin-left:0%;;
+        }
         
     }
 

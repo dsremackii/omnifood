@@ -1,13 +1,23 @@
-/* edit how you want to use global html */
-
-html {
+html,body {
   background-color: $mainWhite;
   color:#555;
   font-family:'Lato', 'Arial', sans-sarif;
   font-weight:300;
   font-size:20px;
   text-rendering:optimazeLegibility;
+  overflow-x: hidden;
 }
+
+body {
+
+  @mixin atMediumBig {
+    font-size: 18px;
+  }
+
+  @mixin atMediumSmall {
+    font-size:16px;
+  }
+} 
 
   
   img {
@@ -23,6 +33,17 @@ html {
 
   h1 {
     margin: 0;
+
+    @mixin atMediumSmall {
+      font-size: 180%;
+  }
+
+  h2 {
+    @mixin atMediumSmall {
+      font-size: 150%;
+  }
+  }
+    
   }
 
   a {
@@ -35,7 +56,19 @@ html {
 
   section {
     padding: 80px 0;
+
+    @mixin atMediumBig {
+      padding: 60px 0;
+    }
+
+    @mixin atMediumSmall{
+      padding: 30px 0;
+    }
+
+    @mixin atSmall {
+      padding: 25px 0;
   }
+}
   
   
   
@@ -43,4 +76,11 @@ html {
     outline:none;
   }
 
+
+  @media only screen and (max-width:767px) {
+    .col {
+      width:100%;
+      margin:0 0 1% 0;
+    }
+  }
  

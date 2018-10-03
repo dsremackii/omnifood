@@ -7,6 +7,10 @@
 
     &__city-features {
         margin-bottom: 5px;
+
+        @mixin atMediumBig {
+            font-size: 90%;
+        }
     }
 
     &__subtitle {

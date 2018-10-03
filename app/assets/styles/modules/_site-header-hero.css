@@ -7,11 +7,19 @@
 
     &__hero-text-box {
         position: absolute;
-        text-align:center;
         width:1140px;
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
+
+        @mixin atLarge {
+            width:100%;
+            padding:0 2%;
+        }
+
+        @mixin atMediumSmall {
+            padding: 0 4%;
+        }
     }
 
     &__title {

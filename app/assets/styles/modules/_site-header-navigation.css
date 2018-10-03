@@ -10,6 +10,10 @@
         float: right;
         margin-top:55px;
 
+        @mixin atMediumSmall {
+            display:none;
+        }
+
         li {
             display:inline-block;
             margin-left: 40px;
@@ -30,7 +34,9 @@
 
             }
         }
+
+        
     }
-   
+    
 
 }

@@ -1,27 +1,25 @@
-/* define mixins to use in css */
+@define-mixin atLarge {
+    @media (max-width: 1200px) {
+      @mixin-content;
+    }
+  }
+  
+  @define-mixin atMediumBig {
+    @media (max-width: 1023px) {
+      @mixin-content;
+    }
+  }
+  
+  @define-mixin atMediumSmall {
+    @media (max-width: 767px) {
+      @mixin-content;
+    }
+  }
 
-@define-mixin atSmall {
-    @media (min-width: 530px) {
+  @define-mixin atSmall {
+    @media (max-width: 480px) {
       @mixin-content;
     }
   }
   
-  @define-mixin atMedium {
-    @media (min-width: 800px) {
-      @mixin-content;
-    }
-  }
-  
-  @define-mixin atLarge {
-    @media (min-width: 1010px) {
-      @mixin-content;
-    }
-  }
-  
-  @define-mixin clearfix {
-    &::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  }
+ 

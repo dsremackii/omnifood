@@ -1,6 +1,14 @@
 .section-form {
     width: 60%;
     margin:0 auto;
+
+    @mixin atMediumBig {
+        width: 80%;
+    }
+
+    @mixin atSmall {
+        width:100%;
+    }
 }
 input[type=text],
 input[type=email],
