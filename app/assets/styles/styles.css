@@ -8,6 +8,7 @@
 @import "base/_headline";
 @import "base/_icons";
 @import "base/_row";
+@import "base/_animationFramework";
 
 
 
@@ -23,7 +24,8 @@
 @import "modules/_sign-up";
 @import "modules/_contact-form";
 @import "modules/_footer";
-
+@import "modules/_sticky";
+@import "modules/_animation.css";
 
 
 

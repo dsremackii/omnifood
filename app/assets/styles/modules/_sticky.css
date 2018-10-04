@@ -1,0 +1,49 @@
+.site-header { 
+
+     &__sticky {
+        position:fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+        background-color:rgba($mainWhite, 0.98);
+        box-shadow:0 2px 2px $mainLightGray;
+        z-index: 10;
+
+        .site-header__main-nav li a:link, 
+        .site-header__main-nav li a:visited {
+                color:$mainGrey;
+                padding:16px 0;
+
+        }
+
+        .site-header__main-nav li a.is-current-link {
+            border-bottom: 2px solid $mainOrange;
+}
+
+        
+
+        .site-header__main-nav {
+            margin-top: 18px;
+
+            
+        }
+
+        .logo--black {
+            display: block;
+            zoom: 0.5;         
+            margin: 5px 0;
+
+        }
+
+        .logo--white {
+            display: none;
+            
+        }
+    }
+}
+
+.logo--black {
+    display: none;
+}
+    
+    

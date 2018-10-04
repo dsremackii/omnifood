@@ -1,5 +1,6 @@
 var $ =require('jquery');
 
-import CodeGoHere from ('./modules/CodeGoHere');
+import Sticky from './modules/Sticky';
 
-var codeGoHere = new CodeGoHere();
+
+var sticky = new Sticky();

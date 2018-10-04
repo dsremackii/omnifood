@@ -1,35 +1,31 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
+@import "base/_animationFramework";
+@import "modules/_animation.css";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
 html {
   font-family: sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
-
 /**
  * Remove the margin in all browsers (opinionated).
  */
-
 body {
   margin: 0;
 }
-
 /* HTML5 display definitions
    ========================================================================== */
-
 /**
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-
 article,
 aside,
 details, /* 1 */
@@ -44,140 +40,110 @@ section,
 summary { /* 1 */
   display: block;
 }
-
 /**
  * Add the correct display in IE 9-.
  */
-
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
 }
-
 /**
  * Add the correct display in iOS 4-7.
  */
-
 audio:not([controls]) {
   display: none;
   height: 0;
 }
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-
 progress {
   vertical-align: baseline;
 }
-
 /**
  * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
  */
-
 template, /* 1 */
 [hidden] {
   display: none;
 }
-
 /* Links
    ========================================================================== */
-
 /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
-
 /**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-
 a:active,
 a:hover {
   outline-width: 0;
 }
-
 /* Text-level semantics
    ========================================================================== */
-
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
-
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-
 b,
 strong {
   font-weight: inherit;
 }
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-
 b,
 strong {
   font-weight: bolder;
 }
-
 /**
  * Add the correct font style in Android 4.3-.
  */
-
 dfn {
   font-style: italic;
 }
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 /**
  * Add the correct background and color in IE 9-.
  */
-
 mark {
   background-color: #ff0;
   color: #000;
 }
-
 /**
  * Add the correct font size in all browsers.
  */
-
 small {
   font-size: 80%;
 }
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-
 sub,
 sup {
   font-size: 75%;
@@ -185,42 +151,32 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
 /* Embedded content
    ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10-.
  */
-
 img {
   border-style: none;
 }
-
 /**
  * Hide the overflow in IE.
  */
-
 svg:not(:root) {
   overflow: hidden;
 }
-
 /* Grouping content
    ========================================================================== */
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 code,
 kbd,
 pre,
@@ -228,34 +184,27 @@ samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
-
 /**
  * Add the correct margin in IE 8.
  */
-
 figure {
   margin: 1em 40px;
 }
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
-
 /* Forms
    ========================================================================== */
-
 /**
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-
 button,
 input,
 optgroup,
@@ -264,52 +213,42 @@ textarea {
   font: inherit; /* 1 */
   margin: 0; /* 2 */
 }
-
 /**
  * Restore the font weight unset by the previous rule.
  */
-
 optgroup {
   font-weight: bold;
 }
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-
 button,
 input { /* 1 */
   overflow: visible;
 }
-
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-
 button,
 select { /* 1 */
   text-transform: none;
 }
-
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-
 button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
 }
-
 /**
  * Remove the inner border and padding in Firefox.
  */
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -317,35 +256,29 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-
 legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
@@ -354,99 +287,77 @@ legend {
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
-
 /**
  * Remove the default vertical scrollbar in IE.
  */
-
 textarea {
   overflow: auto;
 }
-
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
-
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
-
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
-
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
-
 /*  SECTIONS  ============================================================================= */
-
 .section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
 }
-
 /*  GROUPING  ============================================================================= */
-
 .row {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
-
 .row:before,
 .row:after {
     content:"";
     display:table;
 }
-
 .row:after {
     clear:both;
 }
-
 /*  GRID COLUMN SETUP   ==================================================================== */
-
 .col {
 	display: block;
 	float:left;
@@ -454,32 +365,23 @@ textarea {
 
 	
 }
-
 .col:first-child { margin-left: 0; }
-
 /* all browsers except IE6 and lower */
-
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.col { 
 		/*margin: 1% 0 1% 0%;*/
         margin: 0;
 	}
 }
-
 /*  GRID OF TWO   ============================================================================= */
-
 .span-2-of-2 {
 	width: 100%;
 }
-
 .span-1-of-2 {
 	width: 49.2%;
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-2-of-2 {
 		width: 100%; 
@@ -488,23 +390,17 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF THREE   ============================================================================= */
-
 .span-3-of-3 {
 	width: 100%; 
 }
-
 .span-2-of-3 {
 	width: 66.13%; 
 }
-
 .span-1-of-3 {
 	width: 32.26%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-3-of-3 {
 		width: 100%; 
@@ -516,27 +412,20 @@ textarea {
 		width: 100%;
 	}
 }
-
 /*  GRID OF FOUR   ============================================================================= */
-
 .span-4-of-4 {
 	width: 100%; 
 }
-
 .span-3-of-4 {
 	width: 74.6%; 
 }
-
 .span-2-of-4 {
 	width: 49.2%; 
 }
-
 .span-1-of-4 {
 	width: 23.8%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-4-of-4 {
 		width: 100%; 
@@ -551,31 +440,23 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF FIVE   ============================================================================= */
-
 .span-5-of-5 {
 	width: 100%;
 }
-
 .span-4-of-5 {
   	width: 79.68%; 
 }
-
 .span-3-of-5 {
   	width: 59.36%; 
 }
-
 .span-2-of-5 {
   	width: 39.04%;
 }
-
 .span-1-of-5 {
   	width: 18.72%;
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-5-of-5 {
 		width: 100%; 
@@ -593,35 +474,26 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF SIX   ============================================================================= */
-
 .span-6-of-6 {
 	width: 100%;
 }
-
 .span-5-of-6 {
   	width: 83.06%;
 }
-
 .span-4-of-6 {
   	width: 66.13%;
 }
-
 .span-3-of-6 {
   	width: 49.2%;
 }
-
 .span-2-of-6 {
   	width: 32.26%;
 }
-
 .span-1-of-6 {
   	width: 15.33%;
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-6-of-6 {
 		width: 100%; 
@@ -642,39 +514,29 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF SEVEN   ============================================================================= */
-
 .span-7-of-7 {
 	width: 100%;
 }
-
 .span-6-of-7 {
 	width: 85.48%;
 }
-
 .span-5-of-7 {
   	width: 70.97%;
 }
-
 .span-4-of-7 {
   	width: 56.45%;
 }
-
 .span-3-of-7 {
   	width: 41.94%;
 }
-
 .span-2-of-7 {
   	width: 27.42%;
 }
-
 .span-1-of-7 {
   	width: 12.91%;
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-7-of-7 {
 		width: 100%; 
@@ -698,43 +560,32 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF EIGHT   ============================================================================= */
-
 .span-8-of-8 {
 	width: 100%;
 }
-
 .span-7-of-8 {
 	width: 87.3%; 
 }
-
 .span-6-of-8 {
 	width: 74.6%; 
 }
-
 .span-5-of-8 {
 	width: 61.9%; 
 }
-
 .span-4-of-8 {
 	width: 49.2%; 
 }
-
 .span-3-of-8 {
 	width: 36.5%;
 }
-
 .span-2-of-8 {
 	width: 23.8%; 
 }
-
 .span-1-of-8 {
 	width: 11.1%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-8-of-8 {
 		width: 100%; 
@@ -761,47 +612,35 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF NINE   ============================================================================= */
-
 .span-9-of-9 {
 	width: 100%;
 }
-
 .span-8-of-9 {
 	width: 88.71%;
 }
-
 .span-7-of-9 {
 	width: 77.42%; 
 }
-
 .span-6-of-9 {
 	width: 66.13%; 
 }
-
 .span-5-of-9 {
 	width: 54.84%; 
 }
-
 .span-4-of-9 {
 	width: 43.55%; 
 }
-
 .span-3-of-9 {
 	width: 32.26%;
 }
-
 .span-2-of-9 {
 	width: 20.97%; 
 }
-
 .span-1-of-9 {
 	width: 9.68%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-9-of-9 {
 		width: 100%; 
@@ -831,51 +670,38 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF TEN   ============================================================================= */
-
 .span-10-of-10 {
 	width: 100%;
 }
-
 .span-9-of-10 {
 	width: 89.84%;
 }
-
 .span-8-of-10 {
 	width: 79.68%;
 }
-
 .span-7-of-10 {
 	width: 69.52%; 
 }
-
 .span-6-of-10 {
 	width: 59.36%; 
 }
-
 .span-5-of-10 {
 	width: 49.2%; 
 }
-
 .span-4-of-10 {
 	width: 39.04%; 
 }
-
 .span-3-of-10 {
 	width: 28.88%;
 }
-
 .span-2-of-10 {
 	width: 18.72%; 
 }
-
 .span-1-of-10 {
 	width: 8.56%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-10-of-10 {
 		width: 100%; 
@@ -908,55 +734,41 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF ELEVEN   ============================================================================= */
-
 .span-11-of-11 {
 	width: 100%;
 }
-
 .span-10-of-11 {
 	width: 90.76%;
 }
-
 .span-9-of-11 {
 	width: 81.52%;
 }
-
 .span-8-of-11 {
 	width: 72.29%;
 }
-
 .span-7-of-11 {
 	width: 63.05%; 
 }
-
 .span-6-of-11 {
 	width: 53.81%; 
 }
-
 .span-5-of-11 {
 	width: 44.58%; 
 }
-
 .span-4-of-11 {
 	width: 35.34%; 
 }
-
 .span-3-of-11 {
 	width: 26.1%;
 }
-
 .span-2-of-11 {
 	width: 16.87%; 
 }
-
 .span-1-of-11 {
 	width: 7.63%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-11-of-11 {
 		width: 100%; 
@@ -992,59 +804,44 @@ textarea {
 		width: 100%; 
 	}
 }
-
 /*  GRID OF TWELVE   ============================================================================= */
-
 .span-12-of-12 {
 	width: 100%;
 }
-
 .span-11-of-12 {
 	width: 91.53%;
 }
-
 .span-10-of-12 {
 	width: 83.06%;
 }
-
 .span-9-of-12 {
 	width: 74.6%;
 }
-
 .span-8-of-12 {
 	width: 66.13%;
 }
-
 .span-7-of-12 {
 	width: 57.66%; 
 }
-
 .span-6-of-12 {
 	width: 49.2%; 
 }
-
 .span-5-of-12 {
 	width: 40.73%; 
 }
-
 .span-4-of-12 {
 	width: 32.26%; 
 }
-
 .span-3-of-12 {
 	width: 23.8%;
 }
-
 .span-2-of-12 {
 	width: 15.33%; 
 }
-
 .span-1-of-12 {
 	width: 6.86%; 
 }
-
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
 	.span-12-of-12 {
 		width: 100%; 
@@ -1083,7 +880,6 @@ textarea {
 		width: 100%; 
 	}
 }
-
 html,body {
   background-color: #FFF;
   color:#555;
@@ -1093,100 +889,76 @@ html,body {
   text-rendering:optimazeLegibility;
   overflow-x: hidden;
 }
-
-@media (max-width: 1023px) {
-
-  body {
+@media (max-width: 1023px){
+  body{
     font-size: 18px;
   }
 }
-
-@media (max-width: 767px) {
-
-  body {
+@media (max-width: 767px){
+  body{
     font-size: 16px;
   }
 }
-
 img {
     max-width: 100%;
     height: auto;
   }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-
 h1 {
     margin: 0;
     
   }
-
-@media (max-width: 767px) {
-
-  h1 {
+@media (max-width: 767px){
+  h1{
     font-size: 180%;
   }
 }
-
-@media (max-width: 767px) {
-
-  h1 h2 {
+@media (max-width: 767px){
+  h1 h2{
     font-size: 150%;
   }
 }
-
 a {
     text-decoration: none;
   }
-
 li {
     list-style: none;
   }
-
 section {
     padding: 80px 0;
 }
-
-@media (max-width: 1023px) {
-
-  section {
+@media (max-width: 1023px){
+  section{
     padding: 60px 0;
   }
 }
-
-@media (max-width: 767px) {
-
-  section {
+@media (max-width: 767px){
+  section{
     padding: 30px 0;
   }
 }
-
-@media (max-width: 480px) {
-
-  section {
+@media (max-width: 480px){
+  section{
     padding: 25px 0;
   }
 }
-
 *:focus {
     outline:none;
   }
-
 @media only screen and (max-width:767px) {
     .col {
       width:100%;
       margin:0 0 1% 0;
     }
   }
-
 .headline {
     font-weight: 300;
     text-transform: uppercase;
   }
-
 .headline--title {
   font-size: 180%;
   word-spacing: 2px;
@@ -1194,7 +966,6 @@ section {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
-
 .headline--title:after {
   display: block;
   height: 2px;
@@ -1203,44 +974,35 @@ section {
   width: 100px;
   margin: 30px auto 0 auto;
 }
-
 .icon-block {
     display:block;
 }
-
 .ion-big {
   font-size: 350%;
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
 }
-
 .ion-small {
   zoom: 0.67;
   margin-left: 30px;
   }
-
 .icon-inline {
     display: -ms-flexbox;
     display: flex;
     margin-top: 80px;
     
   }
-
-@media (max-width: 1023px) {
-
-  .icon-inline {
+@media (max-width: 1023px){
+  .icon-inline{
     margin-top: 60px;
   }
 }
-
-@media (max-width: 767px) {
-
-  .icon-inline {
+@media (max-width: 767px){
+  .icon-inline{
     margin-top: 30px;
   }
 }
-
 .icon-small {
     display: inline-block;
     width: 30px;
@@ -1254,92 +1016,73 @@ section {
     margin-top: -5px;
 
   }
-
-@media (max-width: 1023px) {
-
-  .icon-small {
+@media (max-width: 1023px){
+  .icon-small{
     width: 17px;
     margin-right: 5px;
   }
 }
-
 .row {
     max-width: 1140px;
     margin:0 auto;
   }
-
-@media (max-width: 1200px) {
-
-  .row {
+@media (max-width: 1200px){
+  .row{
     padding: 0 2%;
   }
 }
-
-@media (max-width: 767px) {
-
-  .row {
+@media (max-width: 767px){
+  .row{
     padding: 0 4%;
   }
 }
-
 .box {
     padding: 1%;
     
   }
-
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
-
 .icon {
       background-image: url('../../assets/images/sprites/sprite-801e3af1.svg');
     }
-
 .no-svg .icon {
       background-image: url('../../assets/images/sprites/sprite-801e3af1.png');
     }
-
 .icon--customer-1 {
     width: 152px;
     height: 152px;
     background-position: 0 37.80487804878049%;
   }
-
 .icon--customer-2 {
     width: 152px;
     height: 152px;
     background-position: 53.374233128834355% 0;
   }
-
 .icon--customer-3 {
     width: 152px;
     height: 152px;
     background-position: 100% 0;
   }
-
 .icon--download-app {
     width: 137px;
     height: 42px;
     background-position: 95.60117302052785% 55.47445255474452%;
   }
-
 .icon--download-app-android {
     width: 174px;
     height: 62px;
     background-position: 0 0;
   }
-
 .icon--logo {
     width: 102px;
     height: 102px;
     background-position: 0 100%;
   }
-
 .icon--logo-white {
     width: 102px;
     height: 102px;
     background-position: 27.127659574468087% 100%;
   }
-
 .btn:link,
     .btn:visited {
   display: inline-block;
@@ -1349,7 +1092,6 @@ Instead edit gulp/templates/sprite */
   color:#FFF;
   transition:background-color 0.2s, border 0.2s, color 0.2s;
 }
-
 .btn-full:link,
     .btn-full:visited {
   background-color: #e67e22;
@@ -1357,29 +1099,24 @@ Instead edit gulp/templates/sprite */
   color:#FFF;
   margin-right:15px;
 }
-
 .btn-ghost:link,
     .btn-ghost:visited {
   border: 1px solid #e67e22;
   color:#e67e22;
 }
-
 .btn:hover,
     .btn:active {
   background-color:#cf6d17;
 }
-
 .btn-full:hover,
     .btn-full:active {
   border: 1px solid #cf6d17;
 }
-
 .btn-ghost:hover,
     .btn-ghost:active {
   border: 1px solid #cf6d17;
   color:#FFF;
 }
-
 .site-header {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/hero.jpg);
     background-size: cover;
@@ -1387,7 +1124,6 @@ Instead edit gulp/templates/sprite */
     background-position: center;
     height: 100vh;
 }
-
 .site-header__hero-text-box {
   position: absolute;
   width:1140px;
@@ -1395,22 +1131,17 @@ Instead edit gulp/templates/sprite */
   left:50%;
   transform:translate(-50%, -50%);
 }
-
-@media (max-width: 1200px) {
-
-  .site-header__hero-text-box {
+@media (max-width: 1200px){
+  .site-header__hero-text-box{
     width: 100%;
     padding: 0 2%;
   }
 }
-
-@media (max-width: 767px) {
-
-  .site-header__hero-text-box {
+@media (max-width: 767px){
+  .site-header__hero-text-box{
     padding: 0 4%;
   }
 }
-
 .site-header__title {
   font-size: 240%;
   word-spacing: 4px;
@@ -1419,30 +1150,24 @@ Instead edit gulp/templates/sprite */
   color:#FFF;
   letter-spacing: 1px;
 }
-
 .site-header__logo {
   display: inline-block;
   float:left;
   margin-top:20px;
 }
-
 .site-header__main-nav {
   float: right;
   margin-top:55px;
 }
-
-@media (max-width: 767px) {
-
-  .site-header__main-nav {
+@media (max-width: 767px){
+  .site-header__main-nav{
     display: none;
   }
 }
-
 .site-header__main-nav li {
   display:inline-block;
   margin-left: 40px;
 }
-
 .site-header__main-nav li a:link,
             .site-header__main-nav li a:visited {
   color:#FFF;
@@ -1452,57 +1177,45 @@ Instead edit gulp/templates/sprite */
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
 }
-
 .site-header__main-nav li a:hover,
             .site-header__main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
-
 .features-section__subtitle {
   font-size: 110%;
   margin-bottom: 15px;
 }
-
 .features-section__title-description {
   line-height: 145%;
   width: 70%;
   margin-left: 15%;
 }
-
-@media (max-width: 1023px) {
-
-  .features-section__title-description {
+@media (max-width: 1023px){
+  .features-section__title-description{
     width: 80%;
     margin-left: 10%;
   }
 }
-
-@media (max-width: 767px) {
-
-  .features-section__title-description {
+@media (max-width: 767px){
+  .features-section__title-description{
     width: 100%;
     margin-left: 0%;
   }
 }
-
 .features-section__subtitle-description {
   font-size: 110%;
   margin-bottom: 15px;
 }
-
 .features-section__bottom-margin {
   margin-bottom: 40px;
 }
-
 .box p {
     font-size: 90%;
     line-height: 145%;
 }
-
 .section-meals {
     padding: 0;
 }
-
 .section-meals__showcase {
   width: 100%;
   display: -ms-grid;
@@ -1510,14 +1223,12 @@ Instead edit gulp/templates/sprite */
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
 }
-
 .section-meals__meal-photo {
   width: 100%;
   margin: 0;
   overflow: hidden;
   background-color: #000;
 }
-
 .section-meals__meal-photo img {
   opacity: 0.7;
   width: 100%;
@@ -1525,88 +1236,66 @@ Instead edit gulp/templates/sprite */
   transform: scale(1.15);
   transition:transform 0.5s, opacity 0.5s;
 }
-
 .section-meals__meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
 }
-
 .section-steps {
     background-color: #f4f4f4;
 }
-
 .section-steps__box {
   margin-top: 30px;
 }
-
-@media (max-width: 1023px) {
-
-  .section-steps__box {
+@media (max-width: 1023px){
+  .section-steps__box{
     margin-top: 10px;
   }
 }
-
 .section-steps__box:first-child {
   text-align: right;
   padding-right: 3%;
   margin-top: 30px;
 }
-
-@media (max-width: 767px) {
-
-  .section-steps__box:first-child {
+@media (max-width: 767px){
+  .section-steps__box:first-child{
     text-align: center;
   }
 }
-
 .section-steps__box:last-child {
   padding-left: 3%;
   margin-top: 70px;
 }
-
-@media (max-width: 1023px) {
-
-  .section-steps__box:last-child {
+@media (max-width: 1023px){
+  .section-steps__box:last-child{
     margin-top: 10px;
   }
 }
-
 .section-steps__app-screen {
   width: 40%;
 }
-
-@media (max-width: 1023px) {
-
-  .section-steps__app-screen {
+@media (max-width: 1023px){
+  .section-steps__app-screen{
     width: 50%;
   }
 }
-
-@media (max-width: 767px) {
-
-  .section-steps__app-screen {
+@media (max-width: 767px){
+  .section-steps__app-screen{
     width: 40%;
   }
 }
-
 .section-steps__work-step {
   margin-bottom: 50px;
 }
-
-@media (max-width: 1023px) {
-
-  .section-steps__work-step {
+@media (max-width: 1023px){
+  .section-steps__work-step{
     margin-top: 40px;
   }
 }
-
-@media (max-width: 767px) {
-
-  .section-steps__work-step {
+@media (max-width: 767px){
+  .section-steps__work-step{
     margin-top: 20px;
   }
 }
-
 .section-steps__work-step div {
   color:#e67e22;
   border:2px solid #e67e22;
@@ -1620,10 +1309,8 @@ Instead edit gulp/templates/sprite */
   font-size:150%;
   margin-right:25px;
 }
-
-@media (max-width: 767px) {
-
-  .section-steps__work-step div {
+@media (max-width: 767px){
+  .section-steps__work-step div{
     height: 40px;
     width: 40px;
     margin-right: 15px;
@@ -1631,28 +1318,22 @@ Instead edit gulp/templates/sprite */
     font-size: 120%;
   }
 }
-
 .section-cities__img {
   width: 100%;
   height: auto;
   margin-bottom:20px;
 }
-
 .section-cities__city-features {
   margin-bottom: 5px;
 }
-
-@media (max-width: 1023px) {
-
-  .section-cities__city-features {
+@media (max-width: 1023px){
+  .section-cities__city-features{
     font-size: 90%;
   }
 }
-
 .section-cities__subtitle {
   margin-bottom: 20px;
 }
-
 .section-cities__link:link,
     .section-cities__link:visited {
   color:#e67e22;
@@ -1660,20 +1341,17 @@ Instead edit gulp/templates/sprite */
   border-bottom:1px solid #e67e22;
   transition:border-bottom 0.2s, color 0.2s;
 }
-
 .section-cities__link:hover,
     .section-cities__link:active {
   color:#555;
   border-bottom:1px solid transparent;
 }
-
 .section-testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.82)), url(/assets/images/back-customers.jpg);
     background-size: cover;
     color:#FFF;
     background-attachment:fixed;
 }
-
 .section-testimonials__blockquote {
   padding: 2%;
   font-style: italic;
@@ -1681,7 +1359,6 @@ Instead edit gulp/templates/sprite */
   position: relative;
   margin-top: 40px;
 }
-
 .section-testimonials__blockquote:before {
   content:"\201C";
   font-size:500%;
@@ -1690,13 +1367,11 @@ Instead edit gulp/templates/sprite */
   top:-5px;
   left:-5px;
 }
-
 .section-testimonials__cite {
   font-size: 90%;
   margin-top: 25px;
   display: block;
 }
-
 .section-testimonials__cite span {
   border-radius:50%;
   zoom: 0.25;
@@ -1704,11 +1379,9 @@ Instead edit gulp/templates/sprite */
   margin-right:15px;
   vertical-align:middle;
 }
-
 .section-plans {
     background-color: #f4f4f4;
 }
-
 .section-plans__plan-box {
   background-color: #FFF;
   border-radius:5px;
@@ -1716,77 +1389,60 @@ Instead edit gulp/templates/sprite */
   margin-left:5%;
   box-shadow: 0 2px 2px #efefef;
 }
-
-@media (max-width: 1023px) {
-
-  .section-plans__plan-box {
+@media (max-width: 1023px){
+  .section-plans__plan-box{
     width: 100%;
     margin-left: 0%;
   }
 }
-
 .section-plans__plan-box div {
   padding: 15px;
   border-bottom: 1px solid #e8e8e8;
 }
-
 .section-plans__plan-box div:first-child{
   background-color: #fcfcfc;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
 .section-plans__plan-box div:last-child{
   text-align: center;
   border:none;
 }
-
 .section-plans__plan-box ul li {
   padding: 5px 0;
 }
-
 .section-plans__plan-price {
   font-size: 300%;
   margin-bottom: 10px;
   font-weight: 100;
   color:#e67e22;
 }
-
-@media (max-width: 1023px) {
-
-  .section-plans__plan-price {
+@media (max-width: 1023px){
+  .section-plans__plan-price{
     font-size: 300%;
   }
 }
-
 .section-plans__plan-price span {
   font-size:30%;
   font-weight:300;
 }
-
 .section-plans__plan-price-meal {
   font-size: 80%;
 }
-
 .section-form {
     width: 60%;
     margin:0 auto;
 }
-
-@media (max-width: 1023px) {
-
-  .section-form {
+@media (max-width: 1023px){
+  .section-form{
     width: 80%;
   }
 }
-
-@media (max-width: 480px) {
-
-  .section-form {
+@media (max-width: 480px){
+  .section-form{
     width: 100%;
   }
 }
-
 input[type=text],
 input[type=email],
 select,
@@ -1796,11 +1452,9 @@ textarea {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
-
 textarea {
     height: 100px;
 }
-
 input[type=submit] {
     display: inline-block;
         padding: 10px 30px;
@@ -1814,117 +1468,125 @@ input[type=submit] {
         color:#FFF;
         margin-right:15px;
 }
-
 input[type=submit]:hover,
         input[type=submit]:active {
   background-color:#cf6d17;
 }
-
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
-
 .section-footer {
     background-color: #333;
     padding: 30px;
     font-size: 80%;
 }
-
 .section-footer p {
   color:#888;
   text-align:center;
   font-size:90%;
   margin-top:20px;
 }
-
 .section-footer__footer-nav {
   float: left;
   display: -ms-flexbox;
   display: flex;
 }
-
-@media (max-width: 767px) {
-
-  .section-footer__footer-nav {
+@media (max-width: 767px){
+  .section-footer__footer-nav{
     float: none;
     -ms-flex-pack: center;
         justify-content: center;
   }
 }
-
 .section-footer__footer-nav li {
   margin-right: 20px;
 }
-
 .section-footer__footer-nav li a:link,
             .section-footer__footer-nav li a:visited {
   border:0;
   color:#888;
   transition:color 0.2s;
 }
-
 .section-footer__footer-nav li a:hover,
             .section-footer__footer-nav li a:active {
   color:#ddd;
 }
-
 .section-footer__footer-nav li:last-child {
   margin-right: 0;
 }
-
 .section-footer__social-links {
   float: right;
   display: -ms-flexbox;
   display: flex;
 }
-
-@media (max-width: 767px) {
-
-  .section-footer__social-links {
+@media (max-width: 767px){
+  .section-footer__social-links{
     float: none;
     -ms-flex-pack: center;
         justify-content: center;
     margin-top: 15px;
   }
 }
-
 .section-footer__social-links li {
   margin-right: 20px;
 }
-
 .section-footer__social-links li a:link,
             .section-footer__social-links li a:visited {
   font-size: 120%;
   color:#888;
 }
-
 .section-footer__social-links li:last-child {
   margin-right: 0;
 }
-
 .icon-facebook,
 .icon-twitter,
 .icon-googleplus,
 .icon-instagram {
     transition:color 0.2s;
 }
-
 .icon-facebook:hover {
     color:#3b5998;
 }
-
 .icon-twitter:hover {
     color:#00aced;
 }
-
 .icon-googleplus:hover {
     color:#dd4b39;
 }
-
 .icon-instagram:hover {
     color:#517fa4;
 }
-
+.site-header__sticky {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  background-color: rgba(255,255,255, 0.98);
+  box-shadow:0 2px 2px #f4f4f4;
+  z-index: 10;
+}
+.site-header__sticky .site-header__main-nav li a:link, 
+        .site-header__sticky .site-header__main-nav li a:visited {
+  color:#555;
+  padding:16px 0;
+}
+.site-header__sticky .site-header__main-nav li a.is-current-link {
+  border-bottom: 2px solid #e67e22;
+}
+.site-header__sticky .site-header__main-nav {
+  margin-top: 18px;
+}
+.site-header__sticky .logo--black {
+  display: block;
+  zoom: 0.5;
+  margin: 5px 0;
+}
+.site-header__sticky .logo--white {
+  display: none;
+}
+.logo--black {
+    display: none;
+}
 
 
 

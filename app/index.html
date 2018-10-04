@@ -21,14 +21,15 @@
 
 <body>
 	<header class="site-header">
-		<nav class="site-header__navigation">
+		<nav class="site-header__navigation ">
 			<div class="site-header__navigation-logo row">
-				<span class="icon icon--logo-white  site-header__logo"></span>
+				<span class="icon icon--logo-white  site-header__logo logo--white"></span>
+				<span class="icon icon--logo  site-header__logo logo--black"></span>
 				<ul class="site-header__main-nav">
-					<li><a href="#">Food delivery</a></li>
-					<li><a href="#">How it works</a></li>
-					<li><a href="#">Our cities</a></li>
-					<li><a href="#">Sing up</a></li>
+					<li><a href="#features-links" id="features-link">Food delivery</a></li>
+					<li><a href="#steps-links" id="steps-link">How it works</a></li>
+					<li><a href="#cities-links" id="cities-link">Our cities</a></li>
+					<li><a href="#form-links" id="form-link">Sign up</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -39,7 +40,7 @@
 		</div>
 	</header>
 
-	<section class="features-section">
+	<section class="features-section omnifood" id="features-links" data-matching-link="#features-link">
 		<div class="row">
 			<h2 class="features-section__title headline--title headline">Get food fast &mdash; not fast food.</h2>
 			<p class="features-section__title-description features-section__bottom-margin">
@@ -48,7 +49,7 @@
 			</p>
 		</div>
 
-		<div class="row">
+		<div class="row anim js--wp-1">
 			<div class="col span-1-of-4 box">
 				<ion-icon name="heart" class="pjf ion-big"></ion-icon>
 				<h3 class="features-section__subtitle headline">Up to 365 days/year</h3>
@@ -87,7 +88,7 @@
 		</div>
 	</section>
 
-	<section class="section-meals">
+	<section class="section-meals omnifood" data-matching-link="#meals-link">
 		<ul class="section-meals__showcase">
 			<li>
 				<figure class="section-meals__meal-photo">
@@ -135,7 +136,7 @@
 		</ul>
 	</section>
 
-	<section class="section-steps">
+	<section class="section-steps omnifood" id="steps-links" data-matching-link="#steps-link">
 		<div class="row">
 			<h2 class="section-steps__title headline--title headline">
 				How it works &ndash; Simple as 1, 2, 3
@@ -177,7 +178,7 @@
 
 	</section>
 
-	<section class="section-cities">
+	<section class="section-cities omnifood" id="cities-links" data-matching-link="#cities-link">
 		<div class="row">
 			<h2 class="section-cities__title headline headline--title">
 				We're currently in these cities
@@ -262,7 +263,7 @@
 		</div>
 	</section>
 
-	<section class="section-testimonials">
+	<section class="section-testimonials omnifood" data-matching-link="#testimonials-link">
 		<div class="row">
 			<h2 class="section-testimonials__title headline headline--title">
 				Our customers can't live without us
@@ -305,7 +306,7 @@
 		</div>
 	</section>
 
-	<section class="section-plans">
+	<section class="section-plans omnifood" id="plans-links" data-matching-link="#plans-link">
 		<div class="row">
 			<h2 class="section-plans__title headline headline--title">
 				Start eating healthy today
@@ -404,7 +405,7 @@
 			</div>
 	</section>
 
-	<section class="section-form">
+	<section class="section-form omnifood" id="form-links" data-matching-link="#form-link">
 		<div class="row">
 			<h2 class="section-form__title headline headline--title">
 				We're happy to hear from you
@@ -469,7 +470,7 @@
 		</div>
 	</section>
 
-	<footer class="section-footer">
+	<footer class="section-footer" data-matching-link="#footer-link">
 		<div class="row">
 			<div class="col span-1-of-2">
 				<ul class="section-footer__footer-nav">
